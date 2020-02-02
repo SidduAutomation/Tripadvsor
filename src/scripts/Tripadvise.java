@@ -26,6 +26,7 @@ public class Tripadvise
         driver.get("https://www.Tripadvisor.in/");
         
         driver.manage().window().maximize();
+		    driver.manage.implicitlywait(10,TIMEUNIT.SECONDS);
 		
 		Search s=new Search(driver);
 		s.Search1(driver, "Club Mahindra");
